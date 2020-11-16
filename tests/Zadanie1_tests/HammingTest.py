@@ -4,9 +4,9 @@ import sys
 sys.path.insert(0, '../../src/Zadanie1')
 from Hamming import Hamming
 
-#h = Hamming()
-#dist = h.distance("", "")
-#print(dist)
+# h = Hamming()
+# dist = h.distance("", "")
+# print(dist)
 
 
 class HammingTest(unittest.TestCase):
