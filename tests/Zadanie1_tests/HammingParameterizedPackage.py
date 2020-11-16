@@ -14,6 +14,7 @@ class HammingParameterizedPackage(unittest.TestCase):
     @parameterized.expand([
         ("", "", 0),
         ("A", "A", 0),
+        ("G", "T", 1),
     ])
 
     def test_one_parameterized(self,a,b, dist):
