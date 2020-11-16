@@ -15,6 +15,7 @@ class HammingParameterizedPackage(unittest.TestCase):
         ("", "", 0),
         ("A", "A", 0),
         ("G", "T", 1),
+        ("GGACTGAAATCTG", "GGACTGAAATCTG", 0),
     ])
 
     def test_one_parameterized(self,a,b, dist):
