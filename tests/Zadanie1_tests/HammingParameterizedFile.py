@@ -17,6 +17,19 @@ class HammingParameterizedFile(unittest.TestCase):
                     self.assertEqual(tmpHamming.distance(a,b), result)
             fileTest.close()
 
+    def test_raises_from_file(self):
+        fileTest = open("../../data/hamming_data_raises")
+        tmpHamming = Hamming()
+        for line in fileTest:
+            if line.startswith("#") or line.startswith(" ") or line.startswith("\n"):
+                continue
+            else:
+                data = line.split(",")
+                a, b, result = str(data[0]), str(data[1]), str(data[2].strip("\n"))
+                # print(a,b,result)
+                self.assertRaises(ValueError, tmpHamming.distance, a, b)
+                # Equal(tmpHamming.distance(a, b), result)
+        fileTest.close()
 
 if __name__ == '__main__':
     unittest.main()

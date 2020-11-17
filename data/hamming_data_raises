@@ -1,4 +1,4 @@
-AATG,AAA,
-ATA",AGTG,
-,G,
-G",,
+AATG,AAA,ValueError
+ATA,AGTG,ValueError
+,G,ValueError
+G,,ValueError
