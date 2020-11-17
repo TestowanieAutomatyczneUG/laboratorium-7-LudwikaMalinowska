@@ -15,6 +15,7 @@ class RomanParameterizedPackage(unittest.TestCase):
         (4, "IV"),
         (6, "VI"),
         (9, "IX"),
+        (27, "XXVII"),
     ])
 
     def test_one_parameterized(self,n, rom):
