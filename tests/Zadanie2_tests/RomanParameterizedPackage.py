@@ -9,7 +9,8 @@ class RomanParameterizedPackage(unittest.TestCase):
         self.tmp = RomanNumerals()
 
     @parameterized.expand([
-        (1, "I")
+        (1, "I"),
+        (2, "II"),
     ])
 
     def test_one_parameterized(self,n, rom):
