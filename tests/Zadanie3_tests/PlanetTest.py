@@ -1,6 +1,8 @@
 import unittest
-from Zadanie3.Planet import Planet
-
+# from Zadanie3.Planet import Planet
+import sys
+sys.path.insert(0, '../../src/Zadanie3')
+from Planet import Planet
 
 class PlanetTests(unittest.TestCase):
 
@@ -40,4 +42,8 @@ class PlanetTests(unittest.TestCase):
 
     def test_mercury_exception3(self):
         self.assertRaises(ValueError, self.temp.count_age_on_planet, "2134835688", "Merkury")
+
+
+if __name__ == '__main__':
+    unittest.main()
 
