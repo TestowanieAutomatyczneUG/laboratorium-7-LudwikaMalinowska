@@ -11,7 +11,8 @@ class RomanParameterizedPackage(unittest.TestCase):
     @parameterized.expand([
         (1, "I"),
         (2, "II"),
-        (3, "III")
+        (3, "III"),
+        (4, "IV"),
     ])
 
     def test_one_parameterized(self,n, rom):
