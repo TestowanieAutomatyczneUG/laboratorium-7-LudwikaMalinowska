@@ -1,12 +1,14 @@
 import unittest
 
+from Zadanie1.Hamming import Hamming
 import sys
-sys.path.insert(0, '../../src/Zadanie1')
-from Hamming import Hamming
+# sys.path.insert(0, '../../src/Zadanie1')
 
-# h = Hamming()
-# dist = h.distance("", "")
-# print(dist)
+
+
+h = Hamming()
+dist = h.distance("", "")
+print(dist)
 
 
 class HammingTest(unittest.TestCase):
@@ -15,7 +17,6 @@ class HammingTest(unittest.TestCase):
     def setUp(self):
         try:
             self.temp = Hamming()
-            self.assertRaisesRegex
 
         except AttributeError:
             self.assertRaisesRegex = self.assertRaisesRegexp
@@ -60,6 +61,7 @@ class HammingTest(unittest.TestCase):
 
     def tearDown(self):
         self.temp = None
+
 
 if __name__ == '__main__':
     unittest.main()
